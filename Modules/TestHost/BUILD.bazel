@@ -1,0 +1,33 @@
+load("@build_bazel_rules_apple//apple:ios.bzl", "ios_application")
+load("@build_bazel_rules_apple//apple:versioning.bzl", "apple_bundle_version")
+
+load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
+
+swift_library(
+    name = "TestHostLib",
+    module_name = "TestHostLib",
+    srcs = glob([
+        "*.swift",
+    ]),
+)
+
+apple_bundle_version(
+    name = "version",
+    build_version = "1.0.0",
+    short_version_string = "1",
+)
+
+ios_application(
+    name = "App",
+    bundle_id = "com.rh.billy.testhost",
+    families = [
+        "iphone",
+    ],
+    infoplists = [":Info.plist"],
+    minimum_os_version = "13.0",
+    deps = [
+        ":TestHostLib"
+    ],
+    version = ":version",
+    visibility = ["//visibility:public"],
+)

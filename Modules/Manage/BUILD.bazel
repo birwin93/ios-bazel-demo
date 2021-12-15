@@ -1,0 +1,21 @@
+# load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library", "swift_binary")
+# # load("@build_bazel_rules_apple//apple:apple.bzl", "apple_universal_binary")
+
+# swift_library(
+#     name = "lib",
+#     module_name = "lib",
+#     srcs = glob([
+#         "*.swift",
+#     ])
+# )
+
+# swift_binary(
+#     name = "CLI",
+#     deps = [":lib"],
+# )
+
+# # apple_universal_binary(
+# #     name = "CLI",
+# #     binary = ":lib",
+# #     platform_type = "macos",
+# # )

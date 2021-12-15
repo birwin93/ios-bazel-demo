@@ -1,0 +1,80 @@
+{
+  "additionalFilePaths" : [
+    "Modules/App/BUILD"
+  ],
+  "buildTargets" : [
+    "//Modules/App:App"
+  ],
+  "optionSet" : {
+    "BazelBuildOptionsDebug" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildOptionsRelease" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildStartupOptionsDebug" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildStartupOptionsRelease" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "CommandlineArguments" : {
+      "p" : "$(inherited)"
+    },
+    "EnvironmentVariables" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "ProjectGenerationBazelStartupOptions" : {
+      "p" : "$(inherited)"
+    },
+    "ProjectPrioritizesSwift" : {
+      "p" : "YES"
+    },
+    "TestActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "TestActionPreActionScript" : {
+      "p" : "$(inherited)"
+    }
+  },
+  "projectName" : "DemoBazel",
+  "sourceFilters" : [
+    "Modules/...",
+    "Modules/App",
+    "Modules/Core",
+    "Modules/Core/Sources",
+    "Modules/Feature",
+    "Modules/Feature/Sources",
+    "bazel",
+    "bazel/swift",
+    "external",
+    "external/RxSwift",
+    "external/RxSwift/Platform",
+    "external/RxSwift/Platform/DataStructures",
+    "external/RxSwift/RxSwift",
+    "external/RxSwift/RxSwift/Concurrency",
+    "external/RxSwift/RxSwift/Disposables",
+    "external/RxSwift/RxSwift/Extensions",
+    "external/RxSwift/RxSwift/Observables",
+    "external/RxSwift/RxSwift/Observers",
+    "external/RxSwift/RxSwift/Schedulers",
+    "external/RxSwift/RxSwift/Schedulers/Internal",
+    "external/RxSwift/RxSwift/Subjects",
+    "external/RxSwift/RxSwift/SwiftSupport",
+    "external/RxSwift/RxSwift/Traits",
+    "external/RxSwift/RxSwift/Traits/Infallible",
+    "external/RxSwift/RxSwift/Traits/PrimitiveSequence"
+  ]
+}

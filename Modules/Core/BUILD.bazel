@@ -1,0 +1,3 @@
+load("//bazel/swift:custom.bzl", "swift_module")
+
+swift_module(name="Core")

@@ -1,0 +1,5 @@
+
+build --xcode_version=13.0.0
+build --apple_generate_dsym
+build --verbose_failures
+build --symlink_prefix=.bazel/
